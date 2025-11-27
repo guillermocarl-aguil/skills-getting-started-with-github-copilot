@@ -89,8 +89,9 @@ section h3 {
 }
 
 .participants-list {
-  list-style-position: inside;
-  margin-left: 10px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
   color: #555;
 }
 
@@ -100,6 +101,9 @@ section h3 {
   background-color: #f0f0f0;
   border-radius: 3px;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .participants-list li em {
@@ -167,6 +171,20 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+/* Delete button next to participant */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+}
+
+.delete-btn:hover {
+  color: #b71c1c;
 }
 
 footer {
